@@ -10,14 +10,6 @@ users:
     - (453) 392-4829
     - (236) 203-0384
 
-grpc:
-  payment:
-    host: payment-api
-    port: 50051
-  notification:
-    host: notification-service
-    port: 50000
-
 eureka:
   instance:
     prefer-ip-address: true
@@ -26,9 +18,3 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://eurekaserver:8070/eureka/
-
-keycloak:
-  server-url: http://keycloak:8080
-  realm: master
-  client-id: agrichain-gateway-cc
-  client-secret: EO3hirhVzqaP6E3afvOzYaK285F1YH4C
