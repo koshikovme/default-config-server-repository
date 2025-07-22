@@ -10,14 +10,6 @@ users:
     - (555) 555-1234
     - (555) 523-1345
 
-grpc:
-  payment:
-    host: localhost
-    port: 50051
-  notification:
-    host: localhost
-    port: 50000
-
 eureka:
   instance:
     prefer-ip-address: true
@@ -25,10 +17,4 @@ eureka:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
-
-keycloak:
-  server-url: http://localhost:8080
-  realm: master
-  client-id: agrichain-gateway-cc
-  client-secret: EO3hirhVzqaP6E3afvOzYaK285F1YH4C
+      defaultZone: http://localhost:8072/eureka/
